@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">GuessTheWord</string>
+    <string name="todo">TODO</string>
+    <string name="reset">RESET</string>
+</resources>
