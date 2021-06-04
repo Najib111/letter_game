@@ -2,4 +2,27 @@
     <string name="app_name">GuessTheWord</string>
     <string name="todo">TODO</string>
     <string name="reset">RESET</string>
+
+    <!--Animals-->
+    <string name="random_letter_cat">CENYAROTRW</string>
+    <string name="random_letter_dog">CSGAOSDTGE</string>
+    <string name="random_letter_sheep">SUEDSEHYPV</string>
+    <string name="random_letter_lion">LETIFDODNB</string>
+    <string name="random_letter_horse">SHGEOGRSCE</string>
+
+
+    <!--Fruits-->
+    <string name="random_letter_apple">EALEPSDPFE</string>
+    <string name="random_letter_banana">AEBEANIENA</string>
+    <string name="random_letter_cherry">CERFYRDHSE</string>
+    <string name="random_letter_melon">MTELBJONUE</string>
+
+
+    <string name="random_letter_kiwi">KGWIFTWXNI</string>
+    <string name="random_letter_orange">ONREANESGE</string>
+    <string name="random_letter_mango">DMGEAQNGYO</string>
+    <string name="restart">Restart</string>
+    <string name="start_game">Start Game</string>
+
+
 </resources>

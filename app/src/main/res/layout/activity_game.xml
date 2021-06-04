@@ -1,106 +1,188 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
-    tools:context=".MainActivity">
+    tools:context=".Game">
 
+
+    <!--Question Image-->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view_img_word"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="40dp"
+        android:background="#00FFFFFF"
+        android:clipToPadding="false"
+        app:cardBackgroundColor="#00FFFFFF"
+        app:cardCornerRadius="25sp">
+
+        <ImageView
+            android:id="@+id/image_word_game"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/horse"
+            android:contentDescription="@string/todo"
+            android:padding="10dp" />
+
+
+    </androidx.cardview.widget.CardView>
 
     <!--RESET-->
     <TextView
+        android:id="@+id/btn_reset_game"
         android:layout_width="130dp"
         android:layout_height="50dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="20dp"
         android:background="@drawable/empty_letter_frame"
         android:gravity="center"
-        android:onClick="reset"
         android:text="@string/reset"
         android:textStyle="bold"
         tools:ignore="UsingOnClickInXml" />
 
-    <!--Selected letters-->
+    <!--Selected letters  (UP)  -->
     <LinearLayout
         android:id="@+id/layout_selected_letters"
         android:layout_width="match_parent"
-        android:layout_height="80dp"
+        android:layout_height="50dp"
         android:layout_centerVertical="true"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="10dp"
-        android:columnCount="6"
-        android:orientation="horizontal"
-        android:rowCount="2">
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:orientation="horizontal">
 
 
         <TextView
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_gravity="center"
-            android:layout_margin="4dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
             android:layout_weight="1"
             android:background="@drawable/empty_letter_frame"
             android:gravity="center"
-            android:textColor="#fff"
+            android:shadowColor="#432805"
+            android:shadowRadius="10"
+            android:tag="1"
+            android:textColor="#421B13"
             android:textSize="24sp"
             android:textStyle="bold" />
 
         <TextView
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_gravity="center"
-            android:layout_margin="4dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
             android:layout_weight="1"
             android:background="@drawable/empty_letter_frame"
             android:gravity="center"
-            android:textColor="#fff"
+            android:shadowColor="#432805"
+            android:shadowRadius="10"
+            android:tag="1"
+            android:textColor="#421B13"
             android:textSize="24sp"
             android:textStyle="bold" />
 
         <TextView
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_gravity="center"
-            android:layout_margin="4dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
             android:layout_weight="1"
             android:background="@drawable/empty_letter_frame"
             android:gravity="center"
-            android:textColor="#fff"
+            android:shadowColor="#432805"
+            android:shadowRadius="10"
+            android:tag="1"
+            android:textColor="#421B13"
             android:textSize="24sp"
             android:textStyle="bold" />
 
         <TextView
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_gravity="center"
-            android:layout_margin="4dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
             android:layout_weight="1"
             android:background="@drawable/empty_letter_frame"
             android:gravity="center"
-            android:textColor="#fff"
+            android:shadowColor="#432805"
+            android:shadowRadius="10"
+            android:tag="1"
+            android:textColor="#421B13"
             android:textSize="24sp"
             android:textStyle="bold" />
 
         <TextView
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_gravity="center"
-            android:layout_margin="4dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
             android:layout_weight="1"
             android:background="@drawable/empty_letter_frame"
             android:gravity="center"
-            android:textColor="#fff"
+            android:shadowColor="#432805"
+            android:shadowRadius="10"
+            android:tag="1"
+            android:textColor="#421B13"
             android:textSize="24sp"
             android:textStyle="bold" />
 
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/empty_letter_frame"
+            android:gravity="center"
+            android:shadowColor="#432805"
+            android:shadowRadius="10"
+            android:tag="1"
+            android:textColor="#421B13"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/empty_letter_frame"
+            android:gravity="center"
+            android:shadowColor="#432805"
+            android:shadowRadius="10"
+            android:tag="1"
+            android:textColor="#421B13"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/empty_letter_frame"
+            android:gravity="center"
+            android:shadowColor="#432805"
+            android:shadowRadius="10"
+            android:tag="1"
+            android:textColor="#421B13"
+            android:textSize="24sp"
+            android:textStyle="bold" />
 
     </LinearLayout>
 
-    <!--Layout for selecting a letter-->
+    <!--Layout for selecting a letter (DOWN) -->
     <GridLayout
         android:id="@+id/layout_letter_selection"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="150dp"
         android:layout_alignParentBottom="true"
         android:columnCount="5"
         android:orientation="horizontal"
@@ -113,6 +195,8 @@
             android:layout_columnWeight="1"
             android:background="@drawable/letter_frame"
             android:gravity="center"
+            android:shadowColor="#432805"
+            android:shadowRadius="10"
             android:tag="1"
             android:textColor="#421B13"
             android:textSize="30sp"
@@ -125,6 +209,8 @@
             android:layout_columnWeight="1"
             android:background="@drawable/letter_frame"
             android:gravity="center"
+            android:shadowColor="#432805"
+            android:shadowRadius="10"
             android:tag="1"
             android:textColor="#421B13"
             android:textSize="30sp"
@@ -137,6 +223,8 @@
             android:layout_columnWeight="1"
             android:background="@drawable/letter_frame"
             android:gravity="center"
+            android:shadowColor="#432805"
+            android:shadowRadius="10"
             android:tag="1"
             android:textColor="#421B13"
             android:textSize="30sp"
@@ -149,6 +237,8 @@
             android:layout_columnWeight="1"
             android:background="@drawable/letter_frame"
             android:gravity="center"
+            android:shadowColor="#432805"
+            android:shadowRadius="10"
             android:tag="1"
             android:textColor="#421B13"
             android:textSize="30sp"
@@ -161,6 +251,8 @@
             android:layout_columnWeight="1"
             android:background="@drawable/letter_frame"
             android:gravity="center"
+            android:shadowColor="#432805"
+            android:shadowRadius="10"
             android:tag="1"
             android:textColor="#421B13"
             android:textSize="30sp"
@@ -173,6 +265,8 @@
             android:layout_columnWeight="1"
             android:background="@drawable/letter_frame"
             android:gravity="center"
+            android:shadowColor="#432805"
+            android:shadowRadius="10"
             android:tag="1"
             android:textColor="#421B13"
             android:textSize="30sp"
@@ -185,6 +279,8 @@
             android:layout_columnWeight="1"
             android:background="@drawable/letter_frame"
             android:gravity="center"
+            android:shadowColor="#432805"
+            android:shadowRadius="10"
             android:tag="1"
             android:textColor="#421B13"
             android:textSize="30sp"
@@ -197,6 +293,8 @@
             android:layout_columnWeight="1"
             android:background="@drawable/letter_frame"
             android:gravity="center"
+            android:shadowColor="#432805"
+            android:shadowRadius="10"
             android:tag="1"
             android:textColor="#421B13"
             android:textSize="30sp"
@@ -209,6 +307,8 @@
             android:layout_columnWeight="1"
             android:background="@drawable/letter_frame"
             android:gravity="center"
+            android:shadowColor="#432805"
+            android:shadowRadius="10"
             android:tag="1"
             android:textColor="#421B13"
             android:textSize="30sp"
@@ -221,6 +321,8 @@
             android:layout_columnWeight="1"
             android:background="@drawable/letter_frame"
             android:gravity="center"
+            android:shadowColor="#432805"
+            android:shadowRadius="10"
             android:tag="1"
             android:textColor="#421B13"
             android:textSize="30sp"
@@ -229,5 +331,32 @@
 
     </GridLayout>
 
+    <!--Restart Game Layout-->
+    <RelativeLayout
+        android:id="@+id/layout_restart_game"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#8BFFFFFF"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="gone">
+
+        <!--RESTART-->
+        <TextView
+            android:id="@+id/btn_restart_game"
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/letter_frame"
+            android:gravity="center"
+            android:shadowColor="#432805"
+            android:shadowRadius="10"
+            android:text="@string/restart"
+            android:textColor="#421B13"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
 
 </RelativeLayout>

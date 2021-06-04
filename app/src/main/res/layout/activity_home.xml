@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".Home">
+
+
+    <Spinner
+        android:id="@+id/spinner_game_type_home"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/letter_frame"
+        android:gravity="center"
+        android:layerType="hardware" />
+
+    <TextView
+        android:id="@+id/btn_start_game_home"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/letter_frame"
+        android:gravity="center"
+        android:text="@string/start_game"
+        android:textColor="#251C0F"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
